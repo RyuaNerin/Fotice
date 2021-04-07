@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fotice_DLL", "Fotice_DLL\Fotice_DLL.vcxproj", "{18A15463-2F00-40FA-B5A2-D3467AF4011D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fotice", "Fotice\Fotice.csproj", "{24961775-A57E-4D29-AA33-4DF519322371}"
+	ProjectSection(ProjectDependencies) = postProject
+		{18A15463-2F00-40FA-B5A2-D3467AF4011D} = {18A15463-2F00-40FA-B5A2-D3467AF4011D}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A8BCF591-EE6E-435D-946A-0B3584A948E2}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fotice_C", "Fotice_C\Fotice_C.vcxproj", "{4A3C38B0-5E1F-4117-B316-604209F76A8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18A15463-2F00-40FA-B5A2-D3467AF4011D}.Debug|x64.ActiveCfg = Release|x64
+		{18A15463-2F00-40FA-B5A2-D3467AF4011D}.Debug|x64.Build.0 = Release|x64
+		{18A15463-2F00-40FA-B5A2-D3467AF4011D}.Release|x64.ActiveCfg = Release|x64
+		{18A15463-2F00-40FA-B5A2-D3467AF4011D}.Release|x64.Build.0 = Release|x64
+		{24961775-A57E-4D29-AA33-4DF519322371}.Debug|x64.ActiveCfg = Debug|x64
+		{24961775-A57E-4D29-AA33-4DF519322371}.Debug|x64.Build.0 = Debug|x64
+		{24961775-A57E-4D29-AA33-4DF519322371}.Release|x64.ActiveCfg = Release|x64
+		{24961775-A57E-4D29-AA33-4DF519322371}.Release|x64.Build.0 = Release|x64
+		{4A3C38B0-5E1F-4117-B316-604209F76A8B}.Debug|x64.ActiveCfg = Debug|x64
+		{4A3C38B0-5E1F-4117-B316-604209F76A8B}.Debug|x64.Build.0 = Debug|x64
+		{4A3C38B0-5E1F-4117-B316-604209F76A8B}.Release|x64.ActiveCfg = Release|x64
+		{4A3C38B0-5E1F-4117-B316-604209F76A8B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97613F2D-185F-4E99-ADF0-05061DCDEAFD}
+	EndGlobalSection
+EndGlobal
