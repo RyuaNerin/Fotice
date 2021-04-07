@@ -1,9 +1,3 @@
-#ifdef _W64
-#define ARCH "64"
-#else
-#define ARCH "32"
-#endif
-
 1 VERSIONINFO
  FILEVERSION 1,0,0,0
  PRODUCTVERSION 1,0,0,0
@@ -24,11 +18,11 @@ BEGIN
             VALUE "CompanyName", "RyuaNerin"
             VALUE "FileDescription", "Hide notice in ffxiv in-game chat"
             VALUE "FileVersion", "1.0.0.0"
-            VALUE "InternalName", "Fotice" ARCH
+            VALUE "InternalName", "Fotice"
             VALUE "LegalCopyright", "Copyright (C) 2021 RyuaNerin."
             VALUE "LegalTrademarks", "RyuaNerin"
-            VALUE "OriginalFilename", "Fotice" ARCH ".dll"
-            VALUE "ProductName", "Fotice" ARCH
+            VALUE "OriginalFilename", "Fotice.dll"
+            VALUE "ProductName", "Fotice"
             VALUE "ProductVersion", "1.0.0.0"
         END
     END
