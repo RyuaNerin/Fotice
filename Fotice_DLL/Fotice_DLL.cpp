@@ -1,16 +1,17 @@
-#define __TEST
+//#define __TEST
 
 #include <windows.h>
 #include <TlHelp32.h>
+
 #include <cstdint>
+#include <memory>
+#include <string>
 
 #include "minhook/include/MinHook.h"
 
 constexpr char* Signature = "4055535641544157488dac24????????4881ec20020000488b05";
 
 #ifdef __TEST
-#include <memory>
-#include <string>
 
 void DebugLog(const wchar_t *fmt, ...)
 {
