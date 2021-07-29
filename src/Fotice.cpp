@@ -1,4 +1,4 @@
-﻿#include "stdafx.h"
+#include "stdafx.h"
 
 #include <iostream>
 
@@ -83,7 +83,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
     DebugLog(L"ThreadPrivilege");
     if (!setPrivilege())
     {
-        MESSAGEBOX_ASTERISK(L"관리자 권한으로 실행시켜주세요!");
+        MESSAGEBOX_ASTERISK(L"관리자 권한으로 실행시켜주세요!!!");
         return 1;
     }
 
@@ -94,7 +94,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
     HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
     if (snapshot == INVALID_HANDLE_VALUE)
     {
-        MESSAGEBOX_ASTERISK(L"관리자 권한으로 실행시켜주세요!");
+        MESSAGEBOX_ASTERISK(L"관리자 권한으로 실행시켜주세요!!");
         return 1;
     }
 

@@ -56,7 +56,7 @@ bool getMemoryPatches(FOTICE_PATCH_INFO* patch_info)
         return false;
     }
 
-    std::string json_version = json["json_version"].asString();
+    std::string json_version = json["version"].asString();
 
     std::wstring json_version_w;
     json_version_w.assign(json_version.begin(), json_version.end());
