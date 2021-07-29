@@ -1,4 +1,4 @@
-#include "stdafx.h"
+﻿#include "stdafx.h"
 
 #include <iostream>
 
@@ -101,7 +101,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
     FOTICE_PATCH_INFO patch_info;
     if (!getMemoryPatches(&patch_info))
     {
-        MESSAGEBOX_ASTERISK(L"관리자 권한으로 실행시켜주세요!");
+        MESSAGEBOX_ASTERISK(L"적용을 위한 정보를 불러오지 못하였습니다.");
         return 1;
     }
 

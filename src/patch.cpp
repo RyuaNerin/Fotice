@@ -22,7 +22,7 @@ bool getMemoryPatches(FOTICE_PATCH_INFO* patch_info)
 {
     std::string body;
     
-    if (!getHttp(L"raw.githubusercontent.com", L"/RyuaNerin/Fotice/master/json_patch_element.json", body))
+    if (!getHttp(L"raw.githubusercontent.com", L"/RyuaNerin/Fotice/master/patch.json", body))
     {
         body.clear();
     }
