@@ -134,7 +134,6 @@
     <Image Include="src\Fotice.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="cpp.hint" />
     <None Include="packages.config" />
     <CopyFileToFolders Include="patch.json">
       <FileType>Document</FileType>
