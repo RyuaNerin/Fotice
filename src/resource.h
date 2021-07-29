@@ -5,7 +5,7 @@
 
 #define IDI_ICON    1
 
-#define FOTICE_VERSION      0,0,0,1
-#define FOTICE_VERSION_STR "0.0.0.1"
+#define FOTICE_VERSION      0,0,0,2
+#define FOTICE_VERSION_STR "0.0.0.2"
 
 #endif
