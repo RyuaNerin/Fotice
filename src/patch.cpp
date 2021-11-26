@@ -71,6 +71,7 @@ bool getMemoryPatches(FOTICE_PATCH_INFO* patch_info)
         FOTICE_PATCH m;
         m.bef = hexToString(json_patch_element["bef"]);
         m.aft = hexToString(json_patch_element["aft"]);
+        m.req = json_patch_element["req"].asBool();
 
         patch_info->patch.push_back(m);
     }
@@ -123,7 +124,7 @@ PATCH_RESULT ffxivPatch(PROCESSENTRY32 pEntry, std::vector<FOTICE_PATCH> patch)
     for (int8_t i = 0; i < patch.size(); ++i)
     {
         result = ffxivPatch(hProcess, modBaseAddr, modBaseSize, patch[i]);
-        if (result != PATCH_RESULT::SUCCESS)
+        if (result != PATCH_RESULT::SUCCESS && patch[i].req)
             return result;
     }
 

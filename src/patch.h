@@ -7,6 +7,7 @@ typedef struct _FOTICE_PATCH
 {
     std::vector<int16_t> aft;
     std::vector<int16_t> bef;
+    bool req;
 } FOTICE_PATCH;
 
 typedef struct _FOTICE_PATCH_INFO
